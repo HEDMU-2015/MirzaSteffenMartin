@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<StackPane prefHeight="531.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GuiController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <MenuBar prefHeight="64.0" prefWidth="769.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <Button fx:id="findMedArb" mnemonicParsing="false" prefHeight="64.0" prefWidth="769.0" text="Find Medarbejdere" />
+            <Button fx:id="jMedArb" mnemonicParsing="false" prefHeight="78.0" prefWidth="769.0" text="Tilføj medarbejder" />
+            <Button fx:id="afdelinger" mnemonicParsing="false" prefHeight="82.0" prefWidth="769.0" text="Afdelinger" />
+            <Button fx:id="jKompetencer" mnemonicParsing="false" prefHeight="87.0" prefWidth="769.0" text="Tilføj kompetencer" />
+            <Button fx:id="g" mnemonicParsing="false" prefHeight="158.0" prefWidth="769.0" text="Søg" />
+         </children>
+      </VBox>
+   </children>
+</StackPane>

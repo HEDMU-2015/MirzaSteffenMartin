@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="342.0" prefWidth="399.0" style="-fx-background-color: #54748b;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GuiNyAfdeling">
+   <children>
+      <Label layoutX="14.0" layoutY="74.0" text="Afdeling:" textFill="WHITE">
+         <font>
+            <Font name="Aharoni Bold" size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Afdeling" layoutX="132.0" layoutY="74.0" prefHeight="32.0" prefWidth="258.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <VBox layoutX="132.0" layoutY="145.0" prefHeight="125.0" prefWidth="180.0" AnchorPane.topAnchor="145.0">
+         <children>
+            <TextField fx:id="Kompetence1" prefHeight="25.0" prefWidth="180.0" />
+            <TextField fx:id="Kompetence2" prefHeight="25.0" prefWidth="265.0">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="Kompetence3">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <VBox layoutX="14.0" layoutY="144.0" prefHeight="125.0" prefWidth="116.0">
+         <children>
+            <Label text="Kompetence:" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label text="Kompetence:" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label text="Kompetence:" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="r" layoutX="323.0" layoutY="303.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="67.0" text="Annuller" />
+      <Button fx:id="OK" layoutX="245.0" layoutY="303.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="67.0" text="OK" />
+      <Label layoutX="95.0" layoutY="14.0" prefHeight="40.0" prefWidth="209.0" text="Tilføj Afdeling" textFill="WHITE">
+         <font>
+            <Font name="Aharoni Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="info" layoutX="103.0" layoutY="118.0" text="Vælg op til 3 kompetencer, dog mindst 1." textFill="WHITE" />
+   </children>
+</AnchorPane>

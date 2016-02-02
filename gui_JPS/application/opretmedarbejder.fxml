@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="443.0" style="-fx-background-color: #54748b;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GuiOpretMedarbejder">
+   <children>
+      <ImageView fitHeight="122.0" fitWidth="149.0" layoutX="14.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Pictures/helena.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="172.0" layoutY="94.0" prefHeight="17.0" prefWidth="91.0" text="Fulde navn     /" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="navn" layoutX="269.0" layoutY="90.0" prefHeight="25.0" prefWidth="151.0">
+         <effect>
+            <SepiaTone />
+         </effect>
+      </TextField>
+      <Label layoutX="172.0" layoutY="161.0" prefHeight="17.0" prefWidth="82.0" text="E-mail         /" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="email" layoutX="278.0" layoutY="157.0" prefHeight="25.0" prefWidth="151.0">
+         <effect>
+            <SepiaTone />
+         </effect>
+      </TextField>
+      <SplitPane dividerPositions="0.015151515151515152" layoutY="200.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="443.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="207.0" prefWidth="441.0" style="-fx-background-color: #54748b;">
+               <children>
+                  <SplitPane dividerPositions="0.4988662131519274" prefHeight="147.0" prefWidth="443.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <TreeView fx:id="tree" layoutX="9.0" layoutY="-5.0" prefHeight="190.0" prefWidth="217.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="179.0" prefWidth="218.0">
+                           <children>
+                              <ListView fx:id="LW" layoutX="-1.0" layoutY="-4.0" prefHeight="147.0" prefWidth="217.0" />
+                           </children></AnchorPane>
+                    </items>
+                  </SplitPane>
+                  <Button fx:id="btn1" layoutX="297.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" text="Annuller">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn2" layoutX="213.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #6db462;" text="Godkend" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <MenuBar prefHeight="25.0" prefWidth="443.0" style="-fx-background-color: #ffa03f;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Opret Medarbejder">
+            <items>
+              <MenuItem mnemonicParsing="false" text="hello" />
+            </items>
+          </Menu>
+        </menus>
+         <contextMenu>
+            <ContextMenu />
+         </contextMenu>
+      </MenuBar>
+   </children>
+</AnchorPane>
