@@ -15,7 +15,7 @@ public String getKompetence(){
 public void setKompetence(String value){
 	kompetence.set(value);
 }
-
+//top kek
 @Override
 public String toString(){
 	return getKompetence();
